@@ -10,6 +10,3 @@ class Solution(object):
                 nums[i], nums[j] = nums[j], nums[i]
                 i += 1
         print(nums)
-
-
-print(Solution.moveZeroes([0, 1, 2, 0, 3]))
