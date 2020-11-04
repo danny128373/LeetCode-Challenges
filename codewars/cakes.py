@@ -2,9 +2,10 @@ def cakes(recipe, available):
     num_cakes = 0
     cake_dict = dict()
     for k, v in recipe.items():
-        if available[k]:
-            cake_dict[k] = available[k]/recipe[k]
-        else:
+        try:
+            if available[k]:
+                cake_dict[k] = available[k]/recipe[k]
+        except:
             return 0
     for key, value in cake_dict.items():
         if num_cakes == 0:
