@@ -4,7 +4,7 @@ def rot13(message):
     new_message = ''
     for letter in list(message):
         if not letter.isalpha():
-            new_message += ' '
+            new_message += letter
             continue
         if letter.isupper():
             index = alpha_upper.index(letter)
