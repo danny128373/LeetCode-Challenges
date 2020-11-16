@@ -6,11 +6,11 @@ def destCity(paths):
     starting = []
     ending = []
     for i in paths:
-        for j, value in enumerate(i):
+        for j, city in enumerate(i):
             if j == 0:
-                starting.append(value)
+                starting.append(city)
             elif j == 1:
-                ending.append(value)
+                ending.append(city)
     for k in ending:
         if k in starting:
             continue
